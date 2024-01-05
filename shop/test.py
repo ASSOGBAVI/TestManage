@@ -9,7 +9,7 @@ class ShopApiTestCase(APITestCase):
     @classmethod
     def setUpTestData(cls):
         cls.category = Category.objects.create(name='Fruits', active=True)
-        Category.objects.create(name='Légumes', active=False)
+        Category.objects.create(name='Légume', active=False)
         
         cls.product = cls.category.products.create(name='Ana')
         cls.category.products.create()
